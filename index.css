@@ -1,0 +1,180 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f1f3f5;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+    background-color: #17324d;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+
+/* MENU */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #315b78;
+    border-radius: 5px;
+}
+
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.texto-apresentacao h2 {
+    color: #17324d;
+    font-size: 2rem;
+}
+
+.texto-apresentacao p {
+    margin-bottom: 24px;
+}
+
+.imagem-apresentacao img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+/* CONTEÚDO DAS PÁGINAS INTERNAS */
+
+.conteudo {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.conteudo h2 {
+    color: #17324d;
+    margin-bottom: 25px;
+}
+
+.conteudo h3 {
+    color: #17324d;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.conteudo p {
+    margin-bottom: 15px;
+}
+
+.conteudo ul {
+    padding-left: 25px;
+}
+
+/* ÁREAS PRINCIPAIS */
+
+.areas {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.areas h2 {
+    color: #17324d;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.grid-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-areas article {
+    border-radius: 8px;
+}
+
+.grid-areas h3 {
+    color: #17324d;
+}
+
+.grid-areas a {
+    color: #075da8;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #17324d;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .apresentacao {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-areas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+  
